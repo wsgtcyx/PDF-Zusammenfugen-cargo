@@ -82,8 +82,8 @@ git push origin main
 ## 7. 验证用户安装路径
 
 ```bash
-brew tap wsgtcyx/PDF-Zusammenfugen-homebrew
-brew install pdf-zusammenfugen-cargo
+brew tap wsgtcyx/pdfzus https://github.com/wsgtcyx/PDF-Zusammenfugen-homebrew.git
+brew install wsgtcyx/pdfzus/pdf-zusammenfugen-cargo
 pdf-zusammenfugen-cargo --help
 ```
 
