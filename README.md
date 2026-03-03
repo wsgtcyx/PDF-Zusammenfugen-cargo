@@ -1,42 +1,38 @@
 # PDF-Zusammenfugen Cargo
 
-Ein praxistaugliches Rust-Tool zum Zusammenfuegen mehrerer PDF-Dateien ueber CLI und Bibliothek.
+Ein Rust-Tool zum **pdf zusammenfuegen**, **pdf verbinden** und **pdf mergen** fuer lokale Workflows.
 
-Mehr zur Browser-Loesung fuer Endnutzer: [pdfzus.de](https://pdfzus.de/)
+Wenn du lieber direkt im Browser arbeitest, findest du hier die Online-Variante:
+[PDF zusammenfuegen online](https://pdfzus.de/)
 
-## Warum dieses Tool?
+## Funktionen
 
-Dieses Crate liefert eine klare, lokale Merge-Logik fuer PDF-Workflows in Rust-Projekten.
-Wenn du eine direkte Browser-Variante ohne Upload suchst, siehe [pdfzus.de](https://pdfzus.de/).
-
-## Features
-
-- Mehrere PDF-Dateien in eine Ausgabe zusammenfuehren
-- Nutzbar als Library (`merge_pdfs`) und als CLI
-- Validierung von Eingabepfaden
-- Unit-Tests mit echten PDF-Testdateien
+- Fuegt mehrere PDF-Dateien zu einer Datei zusammen
+- Nutzbar als CLI und als Rust-Library
+- Strikte Eingabevalidierung mit klaren Fehlermeldungen
+- Unit-Tests fuer die Kernlogik
 
 ## Installation
 
-### Als CLI aus dem Quellcode
+### CLI lokal installieren
 
 ```bash
 cargo install --path .
 ```
 
-### Als Abhaengigkeit
+### Als Library nutzen
 
 ```bash
 cargo add pdf-zusammenfugen-cargo
 ```
 
-## CLI Nutzung
+## CLI-Nutzung
 
 ```bash
 pdf-zusammenfugen-cargo -o merged.pdf teil1.pdf teil2.pdf teil3.pdf
 ```
 
-## Library Nutzung
+## Library-Beispiel
 
 ```rust
 use pdf_zusammenfugen_cargo::merge_pdfs;
@@ -47,6 +43,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         PathBuf::from("teil1.pdf"),
         PathBuf::from("teil2.pdf"),
     ];
+
     merge_pdfs(&input_files, "merged.pdf")?;
     Ok(())
 }
@@ -55,10 +52,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 ## Entwicklung
 
 ```bash
-cargo fmt
+cargo fmt --check
 cargo clippy --all-targets --all-features -- -D warnings
 cargo test
-cargo package
+cargo build --release
 ```
 
 ## Lizenz

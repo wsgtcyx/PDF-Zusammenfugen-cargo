@@ -2,12 +2,13 @@
 name = "pdf-zusammenfugen-cargo"
 version = "0.1.0"
 edition = "2021"
-description = "Rust-Werkzeug zum Zusammenfuegen von PDF-Dateien mit lokaler Verarbeitung."
+rust-version = "1.78"
+description = "Rust-CLI und Library zum pdf zusammenfuegen, pdf verbinden und pdf mergen mit lokaler Verarbeitung."
 license = "MIT"
 repository = "https://github.com/wsgtcyx/PDF-Zusammenfugen-cargo"
-homepage = "https://pdfzus.de/"
+homepage = "https://github.com/wsgtcyx/PDF-Zusammenfugen-cargo"
 readme = "README.md"
-keywords = ["pdf", "merge", "cli", "workflow", "privacy"]
+keywords = ["pdf", "zusammenfuegen", "merge", "cli", "datenschutz"]
 categories = ["command-line-utilities"]
 
 [dependencies]

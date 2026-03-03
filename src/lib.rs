@@ -132,7 +132,7 @@ pub fn merge_pdfs<P: AsRef<Path>, Q: AsRef<Path>>(
 mod tests {
     use super::*;
     use lopdf::{dictionary, Dictionary, Stream};
-    use std::path::PathBuf;
+    use std::path::{Path, PathBuf};
     use tempfile::TempDir;
 
     fn build_sample_pdf(path: &Path, text: &str) -> Result<(), MergePdfError> {
