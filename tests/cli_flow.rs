@@ -80,7 +80,7 @@ fn cli_merges_two_valid_pdfs() -> Result<(), Box<dyn std::error::Error>> {
     build_sample_pdf(&first, "Hallo 1")?;
     build_sample_pdf(&second, "Hallo 2")?;
 
-    let bin = env!("CARGO_BIN_EXE_pdf-zusammenfugen-cargo");
+    let bin = env!("CARGO_BIN_EXE_pdf-zusammenfugen");
     let output = Command::new(bin)
         .arg("-o")
         .arg(&merged)

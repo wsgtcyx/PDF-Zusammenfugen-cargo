@@ -4,7 +4,7 @@ use std::path::PathBuf;
 
 #[derive(Debug, Parser)]
 #[command(
-    name = "pdf-zusammenfugen-cargo",
+    name = "pdf-zusammenfugen",
     version,
     about = "Fuegt mehrere PDF-Dateien zu einer Ausgabedatei zusammen."
 )]

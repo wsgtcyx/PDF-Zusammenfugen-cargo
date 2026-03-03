@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
-BIN_NAME="pdf-zusammenfugen-cargo"
+BIN_NAME="pdf-zusammenfugen"
 VERSION="$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -n 1)"
 HOST_TRIPLE="$(rustc -vV | sed -n 's/^host: //p')"
 DIST_DIR="$ROOT_DIR/dist"

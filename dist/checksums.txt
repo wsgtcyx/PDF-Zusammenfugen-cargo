@@ -1,2 +1,2 @@
-794973ca1fe492a95a27dc61b8cc96de8bbcaad32da64fd84b3274039cb15c39  ./pdf-zusammenfugen-cargo-v0.1.0-aarch64-apple-darwin.tar.gz
-842c6898d0e5be966556928674405a484862a61ffeb4235f31c7e8d619f53c1e  ./pdf-zusammenfugen-cargo-v0.1.0.crate
+891f2198a087dc74b01dd4e34ea012171171ab3889b72f5057bbc3a37ba0b42f  ./pdf-zusammenfugen-v0.2.0-x86_64-apple-darwin.tar.gz
+6ac05bce6f2744fb54a316041b3daa68013f27967e39c37b9603a31114f7b53a  ./pdf-zusammenfugen-cargo-v0.2.0.crate

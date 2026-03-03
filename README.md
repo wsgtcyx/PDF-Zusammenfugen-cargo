@@ -29,7 +29,7 @@ cargo add pdf-zusammenfugen-cargo
 ## CLI-Nutzung
 
 ```bash
-pdf-zusammenfugen-cargo -o merged.pdf teil1.pdf teil2.pdf teil3.pdf
+pdf-zusammenfugen -o merged.pdf teil1.pdf teil2.pdf teil3.pdf
 ```
 
 ## Library-Beispiel
