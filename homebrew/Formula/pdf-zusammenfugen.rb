@@ -1,5 +1,5 @@
 class PdfZusammenfugen < Formula
-  desc "Merge multiple PDF files into one from the command line"
+  desc "Merge multiple PDF files into one from the command-line"
   homepage "https://pdfzus.de/"
   url "https://github.com/wsgtcyx/PDF-Zusammenfugen-cargo/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "e866659ec10df0e18f679906d6084a98b1420707f738a8933f14be69e839feaa"
