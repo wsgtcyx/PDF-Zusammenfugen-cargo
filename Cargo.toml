@@ -1,0 +1,19 @@
+[package]
+name = "pdf-zusammenfugen-cargo"
+version = "0.1.0"
+edition = "2021"
+description = "Rust-Werkzeug zum Zusammenfuegen von PDF-Dateien mit lokaler Verarbeitung."
+license = "MIT"
+repository = "https://github.com/wsgtcyx/PDF-Zusammenfugen-cargo"
+homepage = "https://pdfzus.de/"
+readme = "README.md"
+keywords = ["pdf", "merge", "cli", "workflow", "privacy"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = { version = "4.5.60", features = ["derive"] }
+lopdf = "0.39.0"
+thiserror = "2.0.12"
+
+[dev-dependencies]
+tempfile = "3.26.0"
