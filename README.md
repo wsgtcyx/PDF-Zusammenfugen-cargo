@@ -49,6 +49,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 }
 ```
 
+## Who Uses This Tool
+
+To support Homebrew/core submission quality, we track public, verifiable user signals.
+
+- Open installation requests: [Issues with label `user-signal`](https://github.com/wsgtcyx/PDF-Zusammenfugen-cargo/issues?q=is%3Aissue+label%3Auser-signal)
+- Need official Homebrew support? Open this template: [Homebrew Install Request](https://github.com/wsgtcyx/PDF-Zusammenfugen-cargo/issues/new?template=homebrew-install-request.md)
+
 ## Entwicklung
 
 ```bash
